@@ -23,3 +23,9 @@ Hints:
 
 ## TASK 3
 After compliting task 1 and task 2 you should now be able to run the app, add notes and see the list of all added notes on the screen. However notes will be displayed for example as edu.agh.exercise.Note@c35e0. The task is to add a fragment of code that will make the list contain valuable information, such as the note content or the address.
+
+## TASK 4* - Create a new activity for deleting notes
+The easiest way to complete this task is to create a new Empty Activity, then add a textInputLayout for the id of the note to be deleted and a confirmation button.  
+Hints:  
++ follow the example of the AddNoteActivity class
++ use deleteNoteById method implemented in the DbHelper class to delete note from the database
