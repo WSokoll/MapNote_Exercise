@@ -113,6 +113,8 @@ public class DbHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
+        //YOUR CODE HERE
+
         //change according to the instructions
         return true;
     }
