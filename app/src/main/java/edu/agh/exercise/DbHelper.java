@@ -106,8 +106,8 @@ public class DbHelper extends SQLiteOpenHelper {
      *              variable (-1 means unsuccessful insert).
      *          Remember to close connection before return by using close method on the db object.
      *
-     * @param note Note
-     * @return boolean
+     * @param note Note object to be added to the database
+     * @return boolean value that indicates whether the insert operation was successful
      */
     public boolean addNote(Note note){
 
@@ -118,7 +118,14 @@ public class DbHelper extends SQLiteOpenHelper {
     }
 
 
-    //delete note with specified id
+    /**
+     * Deletes a Note with specified id from the database.
+     * Returns false if the delete was successful.
+     * Returns true if the delete was unsuccessful.
+     *
+     * @param id id of the note to be deleted
+     * @return boolean value that indicates whether the delete operation was successful
+     */
     public boolean deleteNoteById(int id){
         SQLiteDatabase db = this.getWritableDatabase();
 
